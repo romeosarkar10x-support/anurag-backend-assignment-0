@@ -1,6 +1,4 @@
-# anurag-backend-assignment-0
-
-**Anurag's Backend Assignment-0**
+# **Python + MongoDB Assessment (Django/FastAPI)**
 
 A FastAPI-based backend server with JWT authentication and employee management functionality using MongoDB.
 
