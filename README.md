@@ -2,6 +2,18 @@
 
 A FastAPI-based backend server implementing a comprehensive employee management system with CRUD operations, querying, aggregation, and JWT authentication using MongoDB.
 
+## Table of Contents
+
+- [Assignment PDF](#assignment-pdf)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [API Endpoints](#api-endpoints)
+  - [Authentication](#authentication)
+  - [Employee Management](#employee-management)
+  - [Sample Employee Document Structure](#sample-employee-document-structure)
+- [Development](#development)
+- [Project Structure](#project-structure)
+
 ## Assignment PDF
 
 📄 [Assignment Document (View)](https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf) | [Download PDF](https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf)
