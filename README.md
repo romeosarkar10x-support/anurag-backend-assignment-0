@@ -1,15 +1,17 @@
 # **Python + MongoDB Assessment (Django/FastAPI)**
 
-A FastAPI-based backend server with JWT authentication and employee management functionality using MongoDB.
+A FastAPI-based backend server implementing a comprehensive employee management system with CRUD operations, querying, aggregation, and JWT authentication using MongoDB.
 
 ## Assignment PDF
 
-📄 [Assignment Document](https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf)
+📄 [Assignment Document (View)](https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf) | [Download PDF](https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf)
 
 ## Prerequisites
 
 - Python 3.11
-- MongoDB (local or cloud instance)
+- MongoDB (local instance)
+- Database name: `assessment_db`
+- Collection name: `employees`
 
 ## Setup Instructions
 
@@ -53,7 +55,7 @@ pip install -r requirements.txt
 2. Edit `.env` file and add your configuration:
    ```
    SECRET_KEY=your-secret-key-here
-   MONGO_URL=mongodb://localhost:27017/your-database-name
+   MONGO_URL=mongodb://localhost:27017/assessment_db
    ```
 
 ### 6. Start the Server
@@ -66,8 +68,29 @@ The server will start on `http://localhost:8000`
 
 ## API Endpoints
 
-- **POST** `/token` - Authentication endpoint
-- **Employees routes** - Available under `/employees` prefix
+### Authentication
+- **POST** `/token` - JWT authentication endpoint
+
+### Employee Management
+- **POST** `/employees` - Create a new employee
+- **GET** `/employees/{employee_id}` - Get employee by ID
+- **PUT** `/employees/{employee_id}` - Update employee (partial updates supported)
+- **DELETE** `/employees/{employee_id}` - Delete employee
+- **GET** `/employees?department=Engineering` - List employees by department (sorted by joining_date)
+- **GET** `/employees/avg-salary` - Get average salary by department (aggregation)
+- **GET** `/employees/search?skill=Python` - Search employees by skill
+
+### Sample Employee Document Structure
+```json
+{
+  "employee_id": "E123",
+  "name": "John Doe", 
+  "department": "Engineering",
+  "salary": 75000,
+  "joining_date": "2023-01-15",
+  "skills": ["Python", "MongoDB", "APIs"]
+}
+```
 
 ## Development
 
