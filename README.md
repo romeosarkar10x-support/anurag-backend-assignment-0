@@ -4,7 +4,7 @@ A FastAPI-based backend server with JWT authentication and employee management f
 
 ## Assignment PDF
 
-📄 [Assignment Document](https://example.com/assignment-document.pdf) *(URL to be updated)*
+📄 [Assignment Document](https://raw.githubusercontent.com/romeosarkar10x-support/anurag-backend-assignment-0/main/assets/task.pdf)
 
 ## Prerequisites
 
